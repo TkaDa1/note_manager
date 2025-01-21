@@ -1,7 +1,7 @@
 username = input('Пожалуйста, введите имя пользователя: ')
-title_1 = input('Заголовок заметки №1: ')
-title_2 = input('Заголовок заметки №2: ')
-title_3= input('Заголовок заметки №3: ')
+title_1 = input('Основные темы: ')
+title_2 = input('Персонажи: ')
+title_3= input('Рекомендации для чтения: ')
 content = input('Описание заметки: ')
 status = input('Статус заметки: ')
 created_date = input('Дата создания заметки в формате "день-месяц-год", например "10-11-2024": ')
@@ -9,4 +9,12 @@ issue_date = input('Дата истечения заметки (дедлайн) 
 
 titles = [ title_1, title_2, title_3 ]
 
-print(titles [0])
+print('Пользователь:', username)
+print('Основные темы:', title_1)
+print('Персонажи:', title_2)
+print('Рекомендации для чтения:', title_3)
+print('Описание заметки:', content)
+print('Статус заметки:', status)
+print('Дата создания заметки:', created_date[0:5])
+print('Дата истечения заметки (дедлайн):', issue_date[0:5])
+
